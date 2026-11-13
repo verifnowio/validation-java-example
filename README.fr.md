@@ -1,14 +1,14 @@
 # VerifNow Spring Boot – Exemple de validation
 
-> **Projet exemple public** montrant comment intégrer le SDK Spring [VerifNow](https://verifnow.io) (`io.verifnow:verifnow-spring-boot-starter:2.1.0`) dans une application Spring Boot.
+> **Projet exemple public** montrant comment intégrer le SDK Spring [VerifNow](https://verifnow.io) (`io.verifnow:verifnow-spring-boot-starter:2.9.1`) dans une application Spring Boot.
 
 English version: see [README.md](README.md)
 
 | Stack | Version |
 |-------|---------|
-| Java | 21 |
-| Spring Boot | 3.5.13 |
-| SDK VerifNow | 2.1.0 |
+| Java | 25 |
+| Spring Boot | 4.1.2 |
+| SDK VerifNow | 2.9.1 |
 | Build | Maven |
 
 ---
@@ -64,7 +64,7 @@ Les variantes par locale sont également supportées : `ValidationMessages_fr.pr
 
 ### Pré-requis
 
-- JDK 21 installé et configuré dans votre IDE
+- JDK 25 installé et configuré dans votre IDE
 - Maven 3.9+
 - Une clé API VerifNow ([obtenir une clé](https://verifnow.io))
 
@@ -132,7 +132,7 @@ Déclaration dans `pom.xml` :
 <dependency>
     <groupId>io.verifnow</groupId>
     <artifactId>verifnow-spring-boot-starter</artifactId>
-    <version>2.1.0</version>
+    <version>2.9.1</version>
 </dependency>
 ```
 
@@ -170,8 +170,8 @@ postman/                              # Collection & environnement Postman
 
 ## Exécution depuis IntelliJ IDEA
 
-1. Définissez le **Project SDK** sur JDK 21.
-2. Alignez l'import Maven et le Runner Maven sur le même JDK 21.
+1. Définissez le **Project SDK** sur JDK 25.
+2. Alignez l'import Maven et le Runner Maven sur le même JDK 25.
 3. Ré-importez Maven, puis lancez `DemoApplication`.
 
 Si vous voyez une erreur du type :
@@ -180,7 +180,7 @@ Si vous voyez une erreur du type :
 java.lang.ExceptionInInitializerError com.sun.tools.javac.code.TypeTag :: UNKNOWN
 ```
 
-Cela signifie souvent que l'IDE a compilé avec un JDK différent de Maven. Alignez tout sur JDK 21 et recompilez.
+Cela signifie souvent que l'IDE a compilé avec un JDK différent de Maven. Alignez tout sur JDK 25 et recompilez.
 
 ---
 

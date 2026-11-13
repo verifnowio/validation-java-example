@@ -1,14 +1,14 @@
 # VerifNow Spring Boot – Validation Example
 
-> **Public example project** demonstrating how to integrate the [VerifNow](https://verifnow.io) Spring SDK (`io.verifnow:verifnow-spring-boot-starter:2.1.0`) into a Spring Boot application.
+> **Public example project** demonstrating how to integrate the [VerifNow](https://verifnow.io) Spring SDK (`io.verifnow:verifnow-spring-boot-starter:2.9.1`) into a Spring Boot application.
 
 Also available in French: see [README.fr.md](README.fr.md)
 
 | Stack | Version |
 |-------|---------|
-| Java | 21 |
-| Spring Boot | 3.5.13 |
-| VerifNow SDK | 2.1.0 |
+| Java | 25 |
+| Spring Boot | 4.1.2 |
+| VerifNow SDK | 2.9.1 |
 | Build | Maven |
 
 ---
@@ -64,7 +64,7 @@ Locale-specific variants are also supported: `ValidationMessages_fr.properties`,
 
 ### Prerequisites
 
-- JDK 21 installed and configured in your IDE
+- JDK 25 installed and configured in your IDE
 - Maven 3.9+
 - A VerifNow API key ([get one here](https://verifnow.io))
 
@@ -132,7 +132,7 @@ The starter is declared in `pom.xml`:
 <dependency>
     <groupId>io.verifnow</groupId>
     <artifactId>verifnow-spring-boot-starter</artifactId>
-    <version>2.1.0</version>
+    <version>2.9.1</version>
 </dependency>
 ```
 
@@ -170,8 +170,8 @@ postman/                              # Postman collection & environment
 
 ## Run from IntelliJ IDEA
 
-1. Set **Project SDK** to JDK 21.
-2. Align the Maven importer and Runner JDK to the same JDK 21.
+1. Set **Project SDK** to JDK 25.
+2. Align the Maven importer and Runner JDK to the same JDK 25.
 3. Re-import Maven, then Run `DemoApplication`.
 
 If you see an error like:
@@ -180,7 +180,7 @@ If you see an error like:
 java.lang.ExceptionInInitializerError com.sun.tools.javac.code.TypeTag :: UNKNOWN
 ```
 
-it usually means the IDE compiled with a different JDK than the one used by Maven. Align everything to JDK 21 and rebuild.
+it usually means the IDE compiled with a different JDK than the one used by Maven. Align everything to JDK 25 and rebuild.
 
 ---
 
